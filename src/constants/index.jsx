@@ -1,79 +1,76 @@
-import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users } from "lucide-react";
+import {
+  Home,
+  Package,
+  Wallet,
+  Users,
+  Settings,
+  LogOut,
+} from "lucide-react";
 
-import ProfileImage from "@/assets/profile-image.jpg";
+import ProfileImage from "@/assets/profile-image.png";
 import ProductImage from "@/assets/product-image.jpg";
 
 export const navbarLinks = [
-    {
-        title: "Dashboard",
-        links: [
-            {
-                label: "Dashboard",
-                icon: Home,
-                path: "/",
-            },
-            {
-                label: "Analytics",
-                icon: ChartColumn,
-                path: "/analytics",
-            },
-            {
-                label: "Reports",
-                icon: NotepadText,
-                path: "/reports",
-            },
-        ],
-    },
-    {
-        title: "Customers",
-        links: [
-            {
-                label: "Customers",
-                icon: Users,
-                path: "/customers",
-            },
-            {
-                label: "New customer",
-                icon: UserPlus,
-                path: "/new-customer",
-            },
-            {
-                label: "Verified customers",
-                icon: UserCheck,
-                path: "/verified-customers",
-            },
-        ],
-    },
-    {
-        title: "Products",
-        links: [
-            {
-                label: "Products",
-                icon: Package,
-                path: "/products",
-            },
-            {
-                label: "New product",
-                icon: PackagePlus,
-                path: "/new-product",
-            },
-            {
-                label: "Inventory",
-                icon: ShoppingBag,
-                path: "/inventory",
-            },
-        ],
-    },
-    {
-        title: "Settings",
-        links: [
-            {
-                label: "Settings",
-                icon: Settings,
-                path: "/settings",
-            },
-        ],
-    },
+  {
+
+    links: [
+      {
+        label: "Dashboard",
+        icon: Home,
+        path: "/",
+      },
+    ],
+  },
+  {
+
+    links: [
+      {
+        label: "Orders",
+        icon: Package,
+        path: "/orders",
+      },
+    ],
+  },
+  {
+
+    links: [
+      {
+        label: "Wallet",
+        icon: Wallet,
+        path: "/wallets",
+      },
+    ],
+  },
+  {
+ 
+    links: [
+      {
+        label: "Vendors",
+        icon: Users,
+        path: "/vendors",
+      },
+    ],
+  },
+  {
+
+    links: [
+      {
+        label: "Settings",
+        icon: Settings,
+        path: "/settings",
+      },
+    ],
+  },
+  {
+
+    links: [
+      {
+        label: "Log out",
+        icon: LogOut,
+        path: "/logout", // this can be intercepted by logic instead of routing
+      },
+    ],
+  },
 ];
 
 export const overviewData = [
